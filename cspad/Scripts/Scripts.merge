@@ -1,0 +1,17 @@
+# client-side JSON serialization
+JsonFx.Scripts.json2.js, JsonFx.Json
+
+# JSON-RPC support
+JsonFx.Scripts.JsonFx_IO.js, JsonFx.IO
+
+# JavaScript service proxies
+~/RPC/Service.jrpc
+
+
+~/Scripts/jquery-1.4.2.js
+
+# Code Mirror
+~/Scripts/CodeMirror/codemirror.js
+
+~/Scripts/Logic.js
+

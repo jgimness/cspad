@@ -1,0 +1,41 @@
+#OS junk files
+Thumbs.db
+*.DS_Store
+
+#Visual Studio files
+*.obj
+*.exe
+*.pdb
+*.tmp
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+
+#Tooling
+_ReSharper*/
+[Tt]est[Rr]esult*
+Temp/
+
+#Project files
+[Bb]uild/
+*.suo
+ssdsort.suo
+*.user

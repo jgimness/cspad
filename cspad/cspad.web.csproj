@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12AA7E1F-418B-4F7E-B936-29E4327DF45F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cspad.web</RootNamespace>
+    <AssemblyName>cspad.web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EcmaScript.NET.modified, Version=0.1.1.0, Culture=neutral, PublicKeyToken=7d53ba4f537753a5, processorArchitecture=MSIL" />
+    <Reference Include="Genovix, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GenovixCommon\bin\Release\Genovix.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zlib, Version=1.8.4.28, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx.BuildTools, Version=1.4.1003.1321, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="JsonFx.Client, Version=1.4.1003.1321, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="JsonFx.IO, Version=1.4.1003.1321, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="JsonFx.Json, Version=1.4.1003.1321, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SharpTimeAgo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SharpTimeAgo\SharpTimeAgo\obj\Release\SharpTimeAgo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Yahoo.Yui.Compressor.NET20, Version=1.4.0.0, Culture=neutral, PublicKeyToken=0734edc2d38ad47d, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\EcmaScript.NET.modified.dll" />
+    <Content Include="bin\Iesi.Collections.dll" />
+    <Content Include="bin\JsonFx.BuildTools.dll" />
+    <Content Include="bin\JsonFx.BuildTools.xml" />
+    <Content Include="bin\JsonFx.Client.dll" />
+    <Content Include="bin\JsonFx.Client.xml" />
+    <Content Include="bin\JsonFx.IO.dll" />
+    <Content Include="bin\JsonFx.IO.xml" />
+    <Content Include="bin\JsonFx.Json.dll" />
+    <Content Include="bin\JsonFx.Json.xml" />
+    <Content Include="bin\Yahoo.Yui.Compressor.NET20.dll" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\logo.png" />
+    <Content Include="obj\Debug\PigPad.Web.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PigPad.Web.dll" />
+    <Content Include="obj\Debug\PigPad.Web.pdb" />
+    <Content Include="obj\Debug\TempPE\Model.Model.designer.cs.dll" />
+    <Content Include="Scripts\CodeMirror\codemirror.js" />
+    <Content Include="Scripts\CodeMirror\editor.js" />
+    <Content Include="Scripts\CodeMirror\highlight.js" />
+    <Content Include="Scripts\CodeMirror\parsecss.js" />
+    <Content Include="Scripts\CodeMirror\parsedummy.js" />
+    <Content Include="Scripts\CodeMirror\parsehtmlmixed.js" />
+    <Content Include="Scripts\CodeMirror\parsejavascript.js" />
+    <Content Include="Scripts\CodeMirror\parsesparql.js" />
+    <Content Include="Scripts\CodeMirror\parsexml.js" />
+    <Content Include="Scripts\CodeMirror\select.js" />
+    <Content Include="Scripts\CodeMirror\stringstream.js" />
+    <Content Include="Scripts\CodeMirror\tokenize.js" />
+    <Content Include="Scripts\CodeMirror\tokenizejavascript.js" />
+    <Content Include="Scripts\CodeMirror\undo.js" />
+    <Content Include="Scripts\CodeMirror\util.js" />
+    <Content Include="Scripts\jquery-1.4.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.2.js" />
+    <Content Include="Scripts\Logic.js" />
+    <Content Include="Styles\Main.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\CompressionUtils.cs" />
+    <Compile Include="Code\Services\PasteService.cs" />
+    <Compile Include="Code\SessionUtils.cs" />
+    <Compile Include="Code\ShortGuid.cs" />
+    <Compile Include="Code\ZBase32.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raw.ashx.cs">
+      <DependentUpon>Raw.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="RPC\Service.jrpc.cs" />
+    <Compile Include="StaticResourceHandler.ashx.cs">
+      <DependentUpon>StaticResourceHandler.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\RewriteModule.dll" />
+    <Content Include="bin\RewriteModule.pdb" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\code-bg.png" />
+    <Content Include="Images\code-sep.png" />
+    <Content Include="Images\gray-grad.png" />
+    <Content Include="Images\instr.png" />
+    <Content Include="Images\recess.png" />
+    <Content Include="Main.Master" />
+    <Content Include="Scripts\CodeMirror\csharp\css\csharpcolors.css" />
+    <Content Include="Scripts\CodeMirror\csharp\index.html" />
+    <Content Include="Scripts\CodeMirror\csharp\js\parsecsharp.js" />
+    <Content Include="Scripts\CodeMirror\csharp\js\tokenizecsharp.js" />
+    <Content Include="Styles\Buttons.css" />
+    <None Include="Model\Model.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Model.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="RPC\Service.jrpc">
+      <SubType>UserControl</SubType>
+    </None>
+    <None Include="Scripts\CodeMirror.merge" />
+    <None Include="Scripts\Scripts.merge" />
+    <None Include="Styles\Styles.merge" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\Model.dbml.layout">
+      <DependentUpon>Model.dbml</DependentUpon>
+    </None>
+    <None Include="Scripts\csharp.merge" />
+    <Content Include="StaticResourceHandler.ashx" />
+    <Content Include="Images\clone.png" />
+    <Content Include="Images\csg-4c5faaa873d38.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\save-blue.png" />
+    <Content Include="Images\save-gray.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Raw.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RewriteModule\RewriteModule\RewriteModule.csproj">
+      <Project>{90E5AD0E-4BE7-43F7-BB0C-0BA171540886}</Project>
+      <Name>RewriteModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60283</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60283/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

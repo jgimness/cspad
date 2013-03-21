@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="cspad.web.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<%= System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName %>">
+<head id="Head1" runat="server">
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <asp:PlaceHolder id="HeadPlaceHolder" runat="server"></asp:PlaceHolder>
+    
+	<%-- one tag to include all the style sheets --%>
+	<JsonFx:ResourceInclude ID="ResourceInclude1" runat="server" SourceUrl="~/Styles/Styles.merge" />
+	
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2399751-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+
+	<%-- one tag to include all the client scripts --%>
+	<JsonFx:ResourceInclude ID="ResourceInclude2" runat="server" SourceUrl="~/Scripts/Scripts.merge" />
+
+	<%-- control to emit page data as JavaScript --%>
+	<JsonFx:ScriptDataBlock runat="server" ID="PageData" />
+
+	<%--
+		Service proxies are generated at build time
+		if application is being run as a virtual directory
+		then we need to let the JSON-RPC marshalling system
+		know it needs to adjust the end-point URLs
+		NOTE: you can remove this when app root will always be "/"
+	--%>
+	<% if (HttpRuntime.AppDomainAppVirtualPath.Length > 1) { %>
+		<script type="text/javascript">JsonFx.IO.Service.setAppRoot("<%= HttpRuntime.AppDomainAppVirtualPath %>");</script>
+        <link type="text/css" rel="Stylesheet" href="./Styles/Main.css" />	   	
+	<% } %>
+
+<form id="F" runat="server">
+
+    
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    
+</form>
+
+</body>
+</html>
+

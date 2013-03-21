@@ -1,0 +1,59 @@
+﻿
+a.button:hover
+{
+	text-decoration: none !important;
+}
+
+a.button,
+input.button
+{
+    background: transparent url(/images/gray-grad.png);
+    background-position: top left;
+    color: #444 !important;
+    border: 1px solid #BBB;
+    text-decoration: none;
+    overflow: visible;
+    margin-right: 6px;
+    padding: 3px 18px 3px 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+a.button 
+{
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+input.button[disabled] 
+{
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+a.button:hover, 
+input.button:hover
+{    
+    color: #000;
+    -moz-box-shadow: 0px 2px 5px #999;
+    -webkit-box-shadow: 0px 2px 5px #999;
+}
+
+a.button:active,
+input.button:active
+{
+    background-position: bottom left;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+    
+    padding: 4px 18px 2px 18px; /* push text down 1px */
+}
+
+button
+{ 
+    font-size: 100%;
+}
