@@ -171,6 +171,7 @@
     <Content Include="Scripts\CodeMirror\csharp\js\parsecsharp.js" />
     <Content Include="Scripts\CodeMirror\csharp\js\tokenizecsharp.js" />
     <Content Include="Styles\Buttons.css" />
+    <Content Include="connections.config" />
     <None Include="Model\Model.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Model.designer.cs</LastGenOutput>

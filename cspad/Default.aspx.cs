@@ -12,8 +12,7 @@ namespace cspad.web
             Action newPaste = () =>
               {
                   var paste = PasteService.NewPaste();
-                  Response.Redirect("/" + ZBase32.Encode(paste.PasteId));
-                  
+                  Response.Redirect("/" + ZBase32.Encode(paste.PasteId));                  
               };
 
             var rc = RewriteModule.RewriteContext.Current;

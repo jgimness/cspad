@@ -22,7 +22,7 @@ namespace cspad.web
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-            //RewriteModule.Rewriter.Process();
+
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
